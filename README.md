@@ -52,3 +52,4 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
           gabriel@gabriel-Aspir
   
   ```
+    About the smart answer for this question, i just imagine that exist a way of the install all dependencies in image before execute a container.
