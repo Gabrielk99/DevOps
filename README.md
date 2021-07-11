@@ -4,12 +4,12 @@ Course of Docker
 ## PART 1 ##
 
 * 1.1 Getting Started
-  '''
+  ```
     ONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
 0df1d65df0d9   nginx     "/docker-entrypoint.…"   29 seconds ago   Up 28 seconds              80/tcp    zealous_shaw
 126966cace6c   nginx     "/docker-entrypoint.…"   33 seconds ago   Exited (0) 6 seconds ago             mystifying_murdock
 93b8698ace39   nginx     "/docker-entrypoint.…"   35 seconds ago   Exited (0) 9 seconds ago             lucid_clarke
-'''
+```
 * 1.2 Clean up
 
   sudo docker ps -as
