@@ -33,3 +33,22 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
                   2021-07-11 01:05:58 +0000 UTC
                   2021-07-11 01:06:00 +0000 UTC
   ```
+ * 1.4 Missing dependencies
+
+  ```
+  step 1: sudo docker run -d -it --rm --name ubt  ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+  step 2: apt update &&  apt upgrade
+  step 3: apt install curl
+  step 4: sudo docker attach ubt
+  step 5: helsinki.fi
+          Searching..
+          <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+          <html><head>
+          <title>301 Moved Permanently</title>
+          </head><body>
+          <h1>Moved Permanently</h1>
+          <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+          </body></html>
+          gabriel@gabriel-Aspir
+  
+  ```
