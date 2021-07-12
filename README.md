@@ -98,7 +98,7 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
    ### 1.8 Image for script
    
    ```
-   
+   step 0: Created a Dockerfile in path part1/1.8
    step 1: sudo docker build . -t curle
    step 2: sudo docker run -d -it curle
    step 3: sudo docker attach a9
