@@ -81,11 +81,18 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
    ### 1.6 Hello Docker Hub
    
    ```
-    step 1:  sudo docker run -it devopsdockeruh/pull_exercise
+    step 1: sudo docker run -it devopsdockeruh/pull_exercise
     step 2: Enter in ther docker hub web site, and search for the devospdockeruh/pull_exercise
     step 3: Give me the password: basics
             You found the correct password. Secret message is:
             "This is the secret message"
    ```
+   ### 1.7 Two line Dockerfile
    
+   ```
+    step 1: Created a Dockerfile with two lines, using the FROM and CMD statement, the file is in the path part1/1.7
+    step 2: sudo docker build . -t web-serve
+    step 3: sudo docker run web-serve
+    
+   ```
    
