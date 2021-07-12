@@ -53,3 +53,39 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
   
   ```
    About the smart answer for this question, i just imagine that exist a way of the install all dependencies in image before execute a container.
+   
+   * 1.5 Sizes of Images
+
+    ```
+    step 1: sudo docker pull devopsdocheruh/simple-web-service:alpine
+    step 2: sudo docker images
+            REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+            ubuntu                              latest    9873176a8ff5   3 weeks ago    72.7MB
+            fav_distro                          bionic    7d0d8fa37224   3 weeks ago    63.1MB
+            ubuntu                              18.04     7d0d8fa37224   3 weeks ago    63.1MB
+            devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   4 months ago   83MB
+            devopsdockeruh/simple-web-service   alpine    fd312adc88e0   4 months ago   15.7MB
+    step 3: sudo docker tag devopsdockeruh/simple-web-service:alpine wevalp:alpine
+    step 4: sudo docker container run -d -it --name web  wevalp:alpine
+    step 5: sudo docker exec -it web sh
+    step 6: /usr/src/app # cat text.log
+    
+            2021-07-12 14:44:53 +0000 UTC
+            2021-07-12 14:44:55 +0000 UTC
+            2021-07-12 14:44:57 +0000 UTC
+            2021-07-12 14:44:59 +0000 UTC
+            2021-07-12 14:45:01 +0000 UTC
+            Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
+    ```
+   * 1.6 Hello Docker Hub
+   
+   ```
+    step 1:  sudo docker run -it devopsdockeruh/pull_exercise
+    step 2: Enter in ther docker hub web site, and search for the devospdockeruh/pull_exercise
+    step 3: Give me the password: basics
+            You found the correct password. Secret message is:
+            "This is the secret message"
+   ```
+   
+   
