@@ -114,3 +114,4 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
 
    
    ```
+   Ps: a9 is the ID for the curle container (use curle was crashing due to others containers)
