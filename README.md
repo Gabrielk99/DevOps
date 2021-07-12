@@ -95,4 +95,22 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
     step 3: sudo docker run web-serve
     
    ```
+   ### 1.8 Image for script
    
+   ```
+   
+   step 1: sudo docker build . -t curle
+   step 2: sudo docker run -d -it curle
+   step 3: sudo docker attach a9
+   step 4: helsink.fi
+          Searching..
+          <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+          <html><head>
+          <title>301 Moved Permanently</title>
+          </head><body>
+          <h1>Moved Permanently</h1>
+          <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+          </body></html>
+
+   
+   ```
