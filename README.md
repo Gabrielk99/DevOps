@@ -115,3 +115,26 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
    
    ```
    Ps: a9 is the ID for the curle container (use curle was crashing due to others containers)
+
+  ### 1.9 Volumes
+  
+  Well, this question is a little confuse, because i tryed use the next command:
+  ```
+  sudo docker --rm -v $(pwd)/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service
+  
+  ```
+  And this not work correctly, i got this error msg : 
+  <br>
+  ```
+   <nil>
+   open /usr/src/app/text.log: is a directory
+  
+  ```
+  <br>
+  <br>
+  So, i tryed use the next command, and finally, this work, but not like i thoughted, instead the command create a text.log in $pwd, the command inserted three folder, with the names: src, text.log, and usr. In file text.log, has the file text.log with the output.
+  
+  ```
+   sudo docker run --rm -it -v $(pwd):/usr/src/app/text.log -w /usr/src/app/text.log devopsdockeruh/simple-web-service
+   
+  ```
