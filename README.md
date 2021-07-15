@@ -138,3 +138,21 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
    sudo docker run --rm -it -v $(pwd):/usr/src/app/text.log -w /usr/src/app/text.log devopsdockeruh/simple-web-service
    
   ```
+ ### 1.10 Ports open
+ 
+ This is other exercise that have a problem, well, like the section requested, i use the following command :
+ ```
+ sudo docker run -p 8080:80 web-server
+ 
+ ```
+ web-server is the image of exercise, from 1.7.
+ 
+ Whatever, this command doesnt work, and i searched in web for a solution and the following command work to me:
+ 
+ ```
+ 
+ sudo docker run --network="host" web-server
+ 
+ output : {"message":"You connected to the following path: /","path":"/"}
+ 
+ ```
