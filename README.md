@@ -165,5 +165,5 @@ Ps: The image of ubuntu is active because i was doing the rest of the part 1
   step 1: sudo docker run -it --network="host" jav
   
   ```
-  ![Spring](DevOps/blob/main/WhatsApp%20Image%202021-07-16%20at%2017.30.16.jpeg)
+  ![Spring](https://github.com/Gabrielk99/DevOps/blob/main/WhatsApp%20Image%202021-07-16%20at%2017.30.16.jpeg)
   
